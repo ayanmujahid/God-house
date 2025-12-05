@@ -103,7 +103,7 @@
 
             <!-- LOGO -->
             <div class="col-6 col-lg-3 text-start">
-                <img src="/assets/images/logo/logo-en1.webp" class="header-logo img-fluid" alt="logo">
+                <img src="assets/images/logo/logo-en1.webp" class="header-logo img-fluid" alt="logo">
             </div>
 
             <!-- HAMBURGER (Mobile Only) -->
