@@ -1,6 +1,18 @@
 <?php include 'include/head.php';?>
 <?php include 'include/header.php';?>
 
+<section class="gradient-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="banner-content">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
  <!-- ================> PageHeader section start here <================== -->
     <div class="pageheader">
         <div class="container">

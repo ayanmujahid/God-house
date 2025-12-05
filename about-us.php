@@ -12,7 +12,25 @@
             </div>
         </div>
     </section>
-    
+
+    <!-- ================> PageHeader section start here <================== -->
+    <div class="pageheader">
+        <div class="container">
+            <div class="pageheader__area">
+                <!-- <div class="pageheader__left">
+                    <h3>About</h3>
+                </div> -->
+                <div class="pageheader__right">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">About</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- ================> PageHeader section end here <================== -->
 
 <section class="about-section container">
