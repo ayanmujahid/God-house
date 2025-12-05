@@ -1,24 +1,18 @@
 <?php include 'include/head.php';?>
 <?php include 'include/header.php';?>
 
-    <!-- ================> PageHeader section start here <================== -->
-    <div class="pageheader">
+<section class="gradient-banner">
         <div class="container">
-            <div class="pageheader__area">
-                <!-- <div class="pageheader__left">
-                    <h3>About</h3>
-                </div> -->
-                <div class="pageheader__right">
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">About</li>
-                        </ol>
-                    </nav>
+            <div class="row">
+                <div class="col-12">
+                    <div class="banner-content">
+
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+    
     <!-- ================> PageHeader section end here <================== -->
 
 <section class="about-section container">

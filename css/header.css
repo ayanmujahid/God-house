@@ -16,7 +16,6 @@
 }
 
 .custom-header-wrapper .header-logo {
-  width: 100%;
   height: auto;
   transition: max-height 0.3s ease;
 }
@@ -25,24 +24,28 @@
 @media (max-width: 479px) {
   .custom-header-wrapper .header-logo {
     max-height: 60px;
+    width: 100%;
   }
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
   .custom-header-wrapper .header-logo {
     max-height: 80px;
+    width: 100%;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .custom-header-wrapper .header-logo {
     max-height: 120px;
+    width: 100%;
   }
 }
 
 @media (min-width: 992px) {
   .custom-header-wrapper .header-logo {
     max-height: 180px;
+
   }
 }
 
@@ -420,3 +423,4 @@
 button#hamburgerBtn {
     filter: invert(1);
 }
+

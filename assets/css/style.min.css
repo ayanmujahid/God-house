@@ -5811,3 +5811,49 @@ input.custom-checkbox {
     }
 }
 
+.gradient-banner {
+            min-height: 300px;
+            background: linear-gradient(180deg, #1b1b1b 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .banner-content h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        
+        .banner-content p {
+            font-size: 1.25rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .banner-content h1 {
+                font-size: 2rem;
+            }
+            
+            .banner-content p {
+                font-size: 1rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .gradient-banner {
+                min-height: 250px;
+            }
+            
+            .banner-content h1 {
+                font-size: 1.5rem;
+            }
+            
+            .banner-content p {
+                font-size: 0.9rem;
+            }
+        }
