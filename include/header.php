@@ -95,151 +95,91 @@
 
 <!-- ================> header section start here <================== -->
 <header class="header">
-<div class="custom-header-wrapper">
-  <div class="container-fluid px-lg-5">
-    
-    <!-- TOP BAR -->
-    <div class="row align-items-center top-row py-3">
-      
-      <!-- LOGO -->
-      <div class="col-lg-3 text-center text-lg-start mb-3 mb-lg-0">
-        <img src="/assets/images/logo/logo-en1.webp" class="header-logo" alt="logo">
-      </div>
+    <div class="custom-header-wrapper">
+        <div class="container-fluid px-lg-5">
 
-      <!-- EMAIL -->
-      <div class="col-lg-4 d-flex justify-content-center justify-content-lg-center mb-3 mb-lg-0">
-        <div class="d-flex align-items-center gap-3">
-          <div class="icon-circle-dark">
-            <i class="fas fa-envelope"></i>
-          </div>
-          <div>
-            <div class="info-label">Email</div>
-            <div class="info-text">Jesus-is@godshousecenteroftrueworship.org</div>
-          </div>
-        </div>
-      </div>
+            <!-- TOP BAR -->
+            <div class="row align-items-center top-row py-3">
 
-      <!-- ADDRESS -->
-      <div class="col-lg-5 d-flex justify-content-center justify-content-lg-end">
-        <div class="d-flex align-items-center gap-3">
-          <div class="icon-circle-dark">
-            <i class="fas fa-location-dot"></i>
-          </div>
-          <div>
-            <div class="info-label">Address</div>
-            <div class="info-text">866 Mason Avenue, Suite 3, Daytona Beach, FL 32117</div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- LINE -->
-    <div class="border-line-dark"></div>
-
-    <!-- BOTTOM BAR -->
-    <div class="row align-items-center bottom-row py-3">
-
-      <!-- MENU -->
-      <div class="col-lg-8 text-center text-lg-start">
-        <ul class="header-nav justify-content-center justify-content-lg-start">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Contact Now</a></li>
-        </ul>
-      </div>
-
-      <!-- SOCIAL + PHONE -->
-      <div class="col-lg-4 d-flex justify-content-center justify-content-lg-end align-items-center gap-3">
-
-        <div class="icon-circle-dark">
-          <i class="fab fa-facebook-f"></i>
-        </div>
-
-        <div class="d-flex align-items-center gap-3">
-          <div class="icon-circle-dark">
-            <i class="fas fa-phone"></i>
-          </div>
-          <div>
-            <div class="info-label">Call Now</div>
-            <div class="info-text">386-847-5690</div>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-</div>
-
-
-
-
-    <div class="header__bottom">
-        <div class="container">
-            <div class="header__mainmenu navbar navbar-expand-xl navbar-light">
-                <div class="header__logo">
-                    <a href="index.html" class="d-none d-xl-block"><img src="assets/images/logo/logo-en.webp" alt="logo"></a>
-                    <a href="index.html" class="d-xl-none"><img src="assets/images/logo/logo-en.webp" alt="logo"></a>
+                <!-- LOGO -->
+                <div class="col-lg-3 text-center text-lg-start mb-3 mb-lg-0">
+                    <img src="/assets/images/logo/logo-en1.webp" class="header-logo" alt="logo">
                 </div>
-                <div class="header__bar">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menubar" aria-controls="menubar" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <button class="navbar-toggler header__bar-info" type="button" data-bs-toggle="collapse" data-bs-target="#menubar2" aria-controls="menubar2" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="fas fa-info"></span>
-                    </button>
-                </div>
-                <div class="header__menu navbar-expand-xl">
-                    <div class="collapse navbar-collapse" id="menubar">
-                        <ul>
-                            <li class="<?= basename($_SERVER['PHP_SELF']) == 'index.php' ? 'active' : '' ?>">
-                                <a href="index.php">Home</a>
-                            </li>
 
-                            <li class="<?= basename($_SERVER['PHP_SELF']) == 'about-us.php' ? 'active' : '' ?>">
-                                <a href="about-us.php">About</a>
-                            </li>
-
-                            <li class="<?= basename($_SERVER['PHP_SELF']) == 'services.php' ? 'active' : '' ?>">
-                                <a href="services.php">Services</a>
-                            </li>
-
-                            <li class="<?= basename($_SERVER['PHP_SELF']) == 'events.php' ? 'active' : '' ?>">
-                                <a href="events.php">Events</a>
-                            </li>
-
-                            <li class="<?= basename($_SERVER['PHP_SELF']) == 'contact-us.php' ? 'active' : '' ?>">
-                                <a href="contact-us.php">Contact Now</a>
-                            </li>
-
-                            <!-- <li>
-                                    <a href="#0">Blog</a>
-                                    <ul>
-                                        <li><a href="blog.html">Blog Default</a></li>
-                                        <li><a href="blog-2.html">Blog 2 Columns</a></li>
-                                        <li><a href="blog-single.html">Blog Single</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#0">Shop</a>
-                                    <ul>
-                                        <li><a href="shop.html">Shop</a></li>
-                                        <li><a href="shop-single.html">Shop Single</a></li>
-                                        <li><a href="cart.html">Cart Page</a></li>
-                                        <li><a href="check-out.html">Check Out Page</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Contact Us</a></li> -->
-                        </ul>
-                        <!--<a href="#" class="default-btn"><span>Donate Now <i class="fas fa-heart"></i></span></a>-->
+                <!-- EMAIL -->
+                <div class="col-lg-4 d-flex justify-content-center justify-content-lg-center mb-3 mb-lg-0">
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="icon-circle-dark">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <div class="info-label">Email</div>
+                            <div class="info-text">Jesus-is@godshousecenteroftrueworship.org</div>
+                        </div>
                     </div>
                 </div>
+
+                <!-- ADDRESS -->
+                <div class="col-lg-5 d-flex justify-content-center justify-content-lg-end">
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="icon-circle-dark">
+                            <i class="fa fa-location"></i>
+                        </div>
+                        <div>
+                            <div class="info-label">Address</div>
+                            <div class="info-text">866 Mason Avenue, Suite 3, Daytona Beach, FL 32117</div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
+
+            <!-- LINE -->
+            <div class="border-line-dark"></div>
+
+            <!-- BOTTOM BAR -->
+            <div class="row align-items-center bottom-row py-3">
+
+                <!-- MENU -->
+                <div class="col-lg-8 text-center text-lg-start">
+                    <ul class="header-nav justify-content-center justify-content-lg-start">
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="about-us.php">About</a></li>
+                        <li><a href="services.php">Services</a></li>
+                        <li><a href="events.php">Events</a></li>
+                        <li><a href="contact-us.php">Contact Now</a></li>
+                    </ul>
+                </div>
+
+                <!-- SOCIAL + PHONE -->
+                <div class="col-lg-4 d-flex justify-content-center justify-content-lg-end align-items-center gap-3">
+
+                    <div class="icon-circle-dark">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="icon-circle-dark">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <div class="info-label">Call Now</div>
+                            <div class="info-text">386-847-5690</div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
     </div>
+
+
+
+
+
 </header>
 <!-- ================> header section end here <================== -->
+
+<link rel="stylesheet" href="css/header.css">
