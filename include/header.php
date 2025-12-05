@@ -95,85 +95,162 @@
 
 <!-- ================> header section start here <================== -->
 <header class="header">
-    <div class="custom-header-wrapper">
-        <div class="container-fluid px-lg-5">
+<div class="custom-header-wrapper">
+    <div class="container-fluid px-lg-5">
 
-            <!-- TOP BAR -->
-            <div class="row align-items-center top-row py-3">
+        <!-- TOP BAR -->
+        <div class="row align-items-center top-row py-3">
 
-                <!-- LOGO -->
-                <div class="col-lg-3 text-center text-lg-start mb-3 mb-lg-0">
-                    <img src="/assets/images/logo/logo-en1.webp" class="header-logo" alt="logo">
-                </div>
-
-                <!-- EMAIL -->
-                <div class="col-lg-4 d-flex justify-content-center justify-content-lg-center mb-3 mb-lg-0">
-                    <div class="d-flex align-items-center gap-3">
-                        <div class="icon-circle-dark">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div>
-                            <div class="info-label">Email</div>
-                            <div class="info-text">Jesus-is@godshousecenteroftrueworship.org</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- ADDRESS -->
-                <div class="col-lg-5 d-flex justify-content-center justify-content-lg-end">
-                    <div class="d-flex align-items-center gap-3">
-                        <div class="icon-circle-dark">
-                            <i class="fa fa-location"></i>
-                        </div>
-                        <div>
-                            <div class="info-label">Address</div>
-                            <div class="info-text">866 Mason Avenue, Suite 3, Daytona Beach, FL 32117</div>
-                        </div>
-                    </div>
-                </div>
-
+            <!-- LOGO -->
+            <div class="col-6 col-lg-3 text-start">
+                <img src="/assets/images/logo/logo-en1.webp" class="header-logo img-fluid" alt="logo">
             </div>
 
-            <!-- LINE -->
-            <div class="border-line-dark"></div>
+            <!-- HAMBURGER (Mobile Only) -->
+            <div class="col-6 d-lg-none text-center">
+                <button class="hamburger-btn btn p-0" id="hamburgerBtn">
+                    <i class="fas fa-bars fa-lg"></i>
+                </button>
+            </div>
 
-            <!-- BOTTOM BAR -->
-            <div class="row align-items-center bottom-row py-3">
+            <!-- EMAIL (Desktop Only) -->
+            <div class="col-12 col-sm-6 col-lg-4 d-none d-lg-flex justify-content-center mb-3 mb-lg-0">
+                <div class="d-flex align-items-center gap-3">
+                    <div class="icon-circle-dark">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div>
+                        <div class="info-label">Email</div>
+                        <div class="info-text">Jesus-is@godshousecenteroftrueworship.org</div>
+                    </div>
+                </div>
+            </div>
 
-                <!-- MENU -->
-                <div class="col-lg-8 text-center text-lg-start">
-                    <ul class="header-nav justify-content-center justify-content-lg-start">
-                        <li><a href="index.php">Home</a></li>
-                        <li><a href="about-us.php">About</a></li>
-                        <li><a href="services.php">Services</a></li>
-                        <li><a href="events.php">Events</a></li>
-                        <li><a href="contact-us.php">Contact Now</a></li>
-                    </ul>
+            <!-- ADDRESS (Desktop Only) -->
+            <div class="col-12 col-sm-6 col-lg-5 d-none d-lg-flex justify-content-center justify-content-lg-end">
+                <div class="d-flex align-items-center gap-3">
+                    <div class="icon-circle-dark">
+                        <i class="fa fa-location"></i>
+                    </div>
+                    <div>
+                        <div class="info-label">Address</div>
+                        <div class="info-text">866 Mason Avenue, Suite 3, Daytona Beach, FL 32117</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- LINE (Desktop Only) -->
+        <div class="border-line-dark d-none d-lg-block"></div>
+
+        <!-- BOTTOM BAR (Desktop Only) -->
+        <div class="row align-items-center bottom-row py-3 d-none d-lg-flex">
+
+            <!-- MENU -->
+            <div class="col-lg-8 text-center text-lg-start">
+                <ul class="header-nav justify-content-center justify-content-lg-start">
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="about-us.php">About</a></li>
+                    <li><a href="services.php">Services</a></li>
+                    <li><a href="events.php">Events</a></li>
+                    <li><a href="contact-us.php">Contact Now</a></li>
+                </ul>
+            </div>
+
+            <!-- SOCIAL + PHONE -->
+            <div class="col-lg-4 d-flex justify-content-center justify-content-lg-end align-items-center gap-3">
+
+                <div class="icon-circle-dark">
+                    <i class="fab fa-facebook-f"></i>
                 </div>
 
-                <!-- SOCIAL + PHONE -->
-                <div class="col-lg-4 d-flex justify-content-center justify-content-lg-end align-items-center gap-3">
-
+                <div class="d-flex align-items-center gap-3">
                     <div class="icon-circle-dark">
-                        <i class="fab fa-facebook-f"></i>
+                        <i class="fas fa-phone"></i>
                     </div>
-
-                    <div class="d-flex align-items-center gap-3">
-                        <div class="icon-circle-dark">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div>
-                            <div class="info-label">Call Now</div>
-                            <div class="info-text">386-847-5690</div>
-                        </div>
+                    <div>
+                        <div class="info-label">Call Now</div>
+                        <div class="info-text">386-847-5690</div>
                     </div>
-
                 </div>
 
             </div>
 
         </div>
+
     </div>
+</div>
+
+<!-- MOBILE MENU OVERLAY -->
+<div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-header d-flex justify-content-between align-items-center px-3 py-3">
+        <h5 class="m-0">Menu</h5>
+        <button class="mobile-menu-close btn p-0" id="closeMenuBtn">
+            <i class="fas fa-times fa-lg"></i>
+        </button>
+    </div>
+
+    <ul class="mobile-menu-nav list-unstyled px-3">
+        <li class="mb-2"><a href="index.php"><i class="fas fa-home me-2"></i> Home</a></li>
+        <li class="mb-2"><a href="about-us.php"><i class="fas fa-info-circle me-2"></i> About</a></li>
+        <li class="mb-2"><a href="services.php"><i class="fas fa-hands-praying me-2"></i> Services</a></li>
+        <li class="mb-2"><a href="events.php"><i class="fas fa-calendar me-2"></i> Events</a></li>
+        <li class="mb-2"><a href="contact-us.php"><i class="fas fa-envelope me-2"></i> Contact Now</a></li>
+    </ul>
+
+    <div class="px-3 mb-3">
+        <div class="border-line-dark mb-3"></div>
+
+        <div class="mb-3">
+            <div class="d-flex align-items-center gap-3">
+                <div class="icon-circle-dark">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <div>
+                    <div class="info-label">Call Now</div>
+                    <div class="info-text">386-847-5690</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <div class="d-flex align-items-center gap-3">
+                <div class="icon-circle-dark">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div>
+                    <div class="info-label">Email</div>
+                    <div class="info-text small">Jesus-is@godshousecenteroftrueworship.org</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <div class="d-flex align-items-center gap-3">
+                <div class="icon-circle-dark">
+                    <i class="fa fa-location"></i>
+                </div>
+                <div>
+                    <div class="info-label">Address</div>
+                    <div class="info-text small">866 Mason Avenue, Suite 3, Daytona Beach, FL 32117</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-line-dark mb-3"></div>
+
+        <div class="text-center">
+            <div class="icon-circle-dark d-inline-flex">
+                <i class="fab fa-facebook-f"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 
 

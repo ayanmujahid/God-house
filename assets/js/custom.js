@@ -43,6 +43,27 @@
         })
         // Header Cart js
         
+        // Mobile Menu Toggle
+        $('#hamburgerBtn').on('click', function() {
+            $('#mobileMenu').toggleClass('active');
+            $('#mobileMenuOverlay').toggleClass('active');
+        });
+        
+        $('#closeMenuBtn').on('click', function() {
+            $('#mobileMenu').removeClass('active');
+            $('#mobileMenuOverlay').removeClass('active');
+        });
+        
+        $('#mobileMenuOverlay').on('click', function() {
+            $(this).removeClass('active');
+            $('#mobileMenu').removeClass('active');
+        });
+        
+        $('#mobileMenu a').on('click', function() {
+            $('#mobileMenu').removeClass('active');
+            $('#mobileMenuOverlay').removeClass('active');
+        });
+        
         //Toggle Menu
         // $('.bar').on('click', () => {
         //     $('.header-area ').toggleClass('show');
@@ -319,6 +340,32 @@
             });
         });
 
+
+    const hamburgerBtn = document.getElementById("hamburgerBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+    const closeMenuBtn = document.getElementById("closeMenuBtn");
+    const mobileMenuOverlay = document.getElementById("mobileMenuOverlay");
+
+    // OPEN MENU
+    hamburgerBtn.addEventListener("click", function () {
+        mobileMenu.classList.add("open");
+        mobileMenuOverlay.classList.add("show");
+    });
+
+    // CLOSE MENU (X button)
+    closeMenuBtn.addEventListener("click", function () {
+        mobileMenu.classList.remove("open");
+        mobileMenuOverlay.classList.remove("show");
+    });
+
+    // CLOSE MENU when clicking background overlay
+    mobileMenuOverlay.addEventListener("click", function () {
+        mobileMenu.classList.remove("open");
+        mobileMenuOverlay.classList.remove("show");
+    });
+
+
+
         // ajax contact form
         $(function() {
             var form = $('#contact-form');
@@ -350,3 +397,4 @@
         });
     });
 })(jQuery);
+
