@@ -1,0 +1,140 @@
+/* Styles for Core Beliefs section */
+.core-beliefs{
+  padding:3.5rem 1rem;
+  background: linear-gradient(135deg,#f8fbff 0%, #ffffff 100%);
+  border-radius:12px;
+  box-shadow:0 6px 30px rgba(20,30,60,0.06);
+  margin:2rem 0;
+}
+.core-beliefs .section-header{ text-align:center; margin-bottom:1.25rem; }
+.core-beliefs .section-title{ font-size:2rem; color:#0b3b5b; font-weight:700; position:relative; display:inline-block; }
+.core-beliefs .section-title::after{ content:""; display:block; height:3px; width:60px; background:#ffd166; margin:8px auto 0; border-radius:3px; }
+.core-beliefs .about-wrapper{ display:flex; justify-content:center; align-items:center; padding:1rem 0; }
+.core-beliefs .text-block{ max-width:760px; width:100%; }
+.core-beliefs ul{ list-style:none; padding:0; margin:0; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1rem 1.25rem; }
+.core-beliefs li{ background:#fff; border:1px solid rgba(11,59,91,0.06); padding:0.85rem 1rem; border-radius:10px; display:flex; align-items:center; gap:0.75rem; font-weight:600; color:#123; box-shadow:0 4px 18px rgba(12,40,70,0.04); }
+.core-beliefs li::before{ content:"\2713"; color:#1b9aaa; background:rgba(27,154,170,0.08); width:30px; height:30px; display:inline-flex; align-items:center; justify-content:center; border-radius:50%; font-weight:700; margin-right:0.5rem; flex-shrink:0; }
+
+@media (max-width:768px){
+  .core-beliefs{ padding:2rem 1rem; }
+  .core-beliefs ul{ grid-template-columns:1fr; }
+  .core-beliefs .section-title{ font-size:1.5rem; }
+}
+
+@media (prefers-color-scheme: dark){
+  .core-beliefs{ background: linear-gradient(135deg,#071122,#051022); }
+  .core-beliefs .section-title::after{ background:#ffa62b; }
+  .core-beliefs li{ background: rgba(255,255,255,0.03); border-color: rgba(255,255,255,0.04); color:#e6f7ff; box-shadow:none; }
+  .core-beliefs li::before{ background: rgba(27,154,170,0.12); color:#aee8ff; }
+}
+
+    .belief-list {
+        border-radius: 12px;
+        overflow: hidden;
+    }
+    .belief-item {
+        transition: background-color 0.3s ease, padding-left 0.3s ease;
+        border-left: 4px solid transparent;
+    }
+    .belief-item:hover {
+        background-color: #f8f9fa;
+        padding-left: 28px;
+        border-left: 4px solid #0d6efd; /* Bootstrap primary color */
+    }
+        .pastor-img {
+        width: 100%;
+        height: 320px;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+
+    /* Soft hover for the cards */
+    .pastor-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border-radius: 14px;
+    }
+    .pastor-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 25px rgba(0,0,0,0.1);
+    }
+
+    /* For smoother text readability */
+    .pastor-card p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+    .topbar-modern {
+  background: linear-gradient(135deg, #020617, #0f172a);
+  padding: 35px 0;
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(90deg, #38bdf8, #818cf8) 1;
+}
+
+.info-area .info-pill {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 10px 16px;
+  border-radius: 30px;
+  color: #e2e8f0;
+  backdrop-filter: blur(6px);
+  font-size: 14px;
+}
+
+.info-pill i {
+  color: #38bdf8;
+}
+
+.logo-wrap {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: #0f172a;
+  padding: 18px 30px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,.6);
+}
+
+.logo-wrap img {
+  height: 70px;
+  transition: .3s;
+}
+
+.logo-wrap img:hover {
+  transform: scale(1.05);
+}
+
+.glass-social {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: rgba(255,255,255,.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  border: 1px solid rgba(255,255,255,.15);
+  transition: .3s;
+}
+
+.glass-social:hover {
+  background: #38bdf8;
+  color: #000;
+  transform: translateY(-3px) scale(1.05);
+}
+
+/* MOBILE */
+@media (max-width: 991px) {
+  .topbar-modern {
+    padding: 25px 0;
+  }
+
+  .logo-wrap img {
+    height: 55px;
+  }
+
+  .info-area {
+    margin-bottom: 12px;
+  }
+}
