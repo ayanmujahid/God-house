@@ -43,7 +43,7 @@
             <div class="text-block">
                 <h2>What Our Name Means</h2>
 
-                <ul>
+                <ul class="mb-3">
                     <li><strong>God:</strong> The Father, the Son, and the Holy Ghost</li>
                     <li><strong>House:</strong> This is His House, His dwelling place—where we gather in reverence</li>
                     <li><strong>Center Of:</strong> Jesus is our foundation and focus</li>

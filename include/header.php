@@ -130,7 +130,7 @@
             <div class="col-12 col-sm-6 col-lg-5 d-none d-lg-flex justify-content-center justify-content-lg-end">
                 <div class="d-flex align-items-center gap-3">
                     <div class="icon-circle-dark">
-                        <i class="fa fa-location"></i>
+                        <i class="fa fa-map-marker"></i>
                     </div>
                     <div>
                         <div class="info-label">Address</div>
